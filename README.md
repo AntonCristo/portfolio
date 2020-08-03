@@ -4,6 +4,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### 'npm run heroku-postbuild'
+creates the bundled project for production
+
+### 'npm run devserver:start'
+Opens the webpack development server in port 8082
+
 ### `npm start`
 
 Runs the app in the development mode.<br />
