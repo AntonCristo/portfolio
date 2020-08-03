@@ -1,0 +1,117 @@
+.contactwrapper{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.contactwrapper .header{
+    padding: 10px 5px;
+    color: #eee;
+    text-shadow: 2px 2px 5px #000;
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+.contactwrapper .resume{
+    margin:10px;
+    height: 70px;
+    width: 55px;
+    background-image: url('../../assets/pdf.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: bubbler 10s ease-in-out  infinite ;
+    box-shadow: 1px 1px 3px 1px #000;
+}
+
+.contactwrapper .resume:hover{
+    opacity: 0.5;
+}
+
+.contactwrapper .resume:hover{
+    cursor: pointer;
+}
+
+.contactwrapper .contactmedia{
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.contactwrapper .contactmedia div{
+    width: 45px;
+    height: 45px;
+    margin: 8px;
+    
+}
+
+.contactwrapper .contactmedia div:hover{
+    opacity: 0.5;
+}
+
+.contactwrapper .contactmedia div:hover{
+    cursor: pointer;
+}
+
+.contactwrapper .contactmedia div:nth-child(1){
+    background-image: url('../../assets/linkedin.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: bubbler 10s ease-in-out infinite ;
+}
+
+.contactwrapper .contactmedia div:nth-child(2){
+    background-image: url('../../assets/github.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: bubbler 10s ease-in-out 5s infinite ;
+}
+
+.contactwrapper .contactmedia div:nth-child(3){
+    background-image: url('../../assets/gmail.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: bubbler 10s ease-in-out  infinite ;
+}
+
+.contactwrapper .contactmedia div:nth-child(4){
+    background-image: url('../../assets/whatsapp.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: bubbler 10s ease-in-out 5s infinite ;
+}
+
+@keyframes bubbler {
+    0%{
+        transform: scale(1) ;
+    }
+    50%{
+        transform: scale(1.2) ;
+    }
+    100%{
+        transform: scale(1) ;
+    }
+}
+
+@media screen and (min-width:800px){
+    .contactwrapper .header{
+        font-size: 2.8em;
+    }
+    .contactwrapper .contactmedia{
+        margin-top: 30px;
+        width: 60%;
+        justify-content: space-between;
+    }
+    .contactwrapper .contactmedia div{
+        width: 90px;
+        height: 90px;
+        margin: 12px;
+        
+    }
+}

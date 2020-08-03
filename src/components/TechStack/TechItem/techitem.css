@@ -1,0 +1,32 @@
+
+.techitem{
+    margin: 10px;
+    display: flex;
+    
+}
+
+.techitem .title{
+    width: min-content;
+    font-size: 1.4em;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-shadow: 2px 2px 5px black;
+
+}
+
+.techitem .logo{
+    height:50px;
+    width: 50px;
+    
+}
+
+@media screen and (min-width:800px){
+    .techitem .title{
+        font-size: 1.8em;
+    }
+    .techitem .logo{
+        height: 80px;
+        width: 80px;
+    }
+}

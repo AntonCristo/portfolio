@@ -1,0 +1,320 @@
+.landingpage{
+    box-sizing: border-box;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    color:#fff;
+    text-align: center;
+    background: linear-gradient(0deg, rgba(58,58,58,1) , rgba(23,23,23,1) );
+    font-size: 1em;
+    z-index: 100;
+    overflow: hidden;
+    font-family: Consolas, monaco, monospace,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.landingpage .main{
+    box-sizing: inherit;
+    font-size: 0.8rem;
+    border-radius: 3px;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    z-index: 500;
+    animation: appear 2.5s ease-in-out;
+    overflow-y: scroll;
+
+}
+
+.landingpage .main .welcome{
+    height: 100vh;
+    width: 100%; 
+    border-radius: 15px;
+    top: 50%;
+    left: 50%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(1em + 1vw);
+    font-weight: bold;
+    text-shadow: 2px 2px 2px black;
+}
+
+.landingpage .main .projects{
+    height: 100vh;
+}
+
+.landingpage .main .about{
+    height: 110vh;
+}
+
+.landingpage .main .tech{
+    height: 100vh;
+}
+
+.landingpage .main .contact{
+    height: 50vh;
+}
+
+.boxes div{
+    position: absolute;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    z-index: 200;
+    
+}
+
+.boxes div:hover{
+    cursor: pointer;
+    border-radius: 50%;
+    padding:5px;
+    box-shadow: 1px 1px 5px 1px #eee;
+}
+
+.boxes div:nth-child(1){
+    top:16%;
+    left:22%;
+    animation: mover 5s ease-in-out infinite  ;
+    background-image: url('../../assets/git.svg');
+    background-position: center;
+    background-size: contain;
+}
+
+.boxes div:nth-child(2){
+    top:10%;
+    left:30%;
+    animation: mover 5s ease-in-out 0.3s infinite  ;
+    background-image: url('../../assets/visual.svg');
+    background-position: center;
+    background-size: contain;
+}
+
+.boxes div:nth-child(3){
+    top:20%;
+    left:72%;
+    animation: traveler 10s ease-in-out infinite;
+    background-image: url('../../assets/webpack.svg');
+    background-position: center;
+    background-size: contain;
+}
+
+.boxes div:nth-child(4){
+    top:4%;
+    left:80%;
+    animation: staticer 5s ease-in 1s infinite  ;
+    background-image: url('../../assets/react.svg');
+    background-position: center;
+    background-size: contain;
+}
+
+.boxes div:nth-child(5){
+    top:40%;
+    left:10%;
+    animation: mover 5s ease-in-out infinite ;
+    background-image: url('../../assets/nodejs.svg');
+    background-position: center;
+    background-size: contain;
+}
+
+.boxes div:nth-child(6){
+    top:52%;
+    left:80%;
+    animation: mover 5s ease-in-out 0.5s infinite reverse ;
+    background-image: url('../../assets/html5.svg');
+    background-position: center;
+    background-size: contain;
+}
+
+.boxes div:nth-child(7){
+    top:85%;
+    left:20%;
+    animation: mover 5s ease-in-out infinite  ;
+    background-image: url('../../assets/javascript.svg');
+    background-position: center;
+    background-size: contain;
+}
+
+.boxes div:nth-child(8){
+    top:85%;
+    left:53%;
+    animation: traveleralternate 10s linear 1s infinite;
+    background-image: url('../../assets/firebase.svg');
+    background-position: center;
+    background-size: contain;
+}
+
+.boxes div:nth-child(9){
+    top:83%;
+    left:70%;
+    animation: mover 5s ease-in-out 1s infinite ;
+    background-image: url('../../assets/css3.svg');
+    background-position: center;
+    background-size: contain;
+}
+
+.boxes div:nth-child(10){
+    top:60%;
+    left:4%;
+    animation: traveleralternate 8s ease-in-out 0.5s infinite ;
+    background-image: url('../../assets/redux.svg');
+    background-position: center;
+    background-size: contain;
+
+}
+
+.boxes div:nth-child(11){
+    top:60%;
+    left:18%;
+    width: 3px;
+    height: 3px;
+    animation: blink 2s ease-in-out  infinite;
+}
+
+.boxes div:nth-child(12){
+    top:10%;
+    left:70%;
+    width: 3px;
+    height: 3px;
+    animation: blink 2s ease-in-out  infinite;
+}
+
+.boxes div:nth-child(13){
+    top:10%;
+    left:10%;
+    width: 3px;
+    height: 3px;
+    animation: blink 2s ease-in-out  infinite;
+}
+
+.boxes div:nth-child(14){
+    top:20%;
+    left:80%;
+    width: 3px;
+    height: 3px;
+    animation: blink 2s ease-in-out  infinite;
+}
+
+.boxes div:nth-child(15){
+    top:78%;
+    left:70%;
+    width: 3px;
+    height: 3px;
+    animation: blink 2s ease-in-out  infinite;
+}
+
+.boxes div:nth-child(16){
+    top: 85%;
+    left:10%;
+
+    animation: staticer 10s ease-in-out  infinite;
+    background-image: url('../../assets/sass.svg');
+    background-position: center;
+    background-size: contain;
+}
+
+
+@keyframes blink{
+    0%{
+        background-color: #fff;
+        transform: scale(0,0);
+    }
+    50%{
+        background-color: #F2E52E;
+        transform: scale(1.1,1.1);
+    }
+    100%{
+        background-color: #fff;
+        transform: scale(0,0);
+    }
+}
+
+@keyframes appear {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes rotater {
+    0%{
+        transform:  rotate(0deg);
+    }
+    100%{
+        transform:  rotate(360deg);
+    }
+}
+
+@keyframes mover {
+    0%{
+        opacity: 1;
+        transform: scale(0) translate(0,0) ;
+    }
+    100%{
+        opacity: 0;
+        transform: scale(1.3) translate(10px,-200px);
+    }
+}
+
+@keyframes traveler {
+    0%{
+        transform: translateX(0) translateY(0) scale(0);
+    }
+    50%{
+        transform: translateX(-100vw) translateY(-30vh) scale(1.5);
+    }
+    100%{
+        transform: translateX(0) translateY(-2%) scale(0);
+    }
+}
+
+@keyframes traveleralternate {
+    0%{
+        transform: translateX(0) translateY(0) scale(0);
+    }
+    50%{
+        transform: translateX(50vw) translateY(-30vh) scale(1.5);
+        opacity: 0.1;
+    }
+    100%{
+        transform: translateX(0) translateY(2%) scale(0);
+    }
+}
+
+@keyframes staticer {
+    0%{
+        transform: scale(0) rotate(0deg);
+    }
+    50%{
+        transform: scale(1.2) rotate(180deg);
+    }
+    100%{
+        transform: scale(0) rotate(360deg);
+    }
+}
+
+
+@media screen and (orientation:landscape) and (max-width:800px){
+    .landingpage .main .projects{
+        height: 100vw;
+    }
+
+    .landingpage .main .about{
+        height: 110vw;
+    }
+
+    .landingpage .main .tech{
+        height: 100vw;
+    }
+
+    .landingpage .main .contact{
+        height: 50vw;
+    }
+}

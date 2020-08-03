@@ -1,0 +1,30 @@
+
+.techstack{
+    height: 100%;
+    background: linear-gradient(rgba(209, 226, 255, 0.4),rgba(176, 172, 154, 0.1));
+
+}
+
+.techstack h1{
+    font-size: calc(1.9em + 1vw);
+    text-shadow: 2px 2px 2px black;
+    margin: 0;
+    padding: 15px 0;
+}
+
+.techstack .stack{
+    border-top: 2px solid rgba(176, 172, 154, 0.3);
+    height: calc(100% - 1.9em - 1vw - 40px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width:800px){
+    .techstack .stack{
+        flex-direction: column;
+
+    }
+}
